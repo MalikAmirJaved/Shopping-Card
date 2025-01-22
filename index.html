@@ -1,0 +1,896 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping Mall</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body style="background-color: rgb(250, 247, 247);">
+    <div id="maindiv" class="w-full">
+        <div id="tob" class="bg-white sm:grid sm:grid-cols-2 mx-4 mt-2 rounded-lg flex flex-col">
+            <div id="topleft" class="px-5 py-4">
+                <span class="">Total Reward Till Now</span>
+                <hr class="mt-1 mb-4">
+                <div class="grid grid-cols-1 space-y-4">
+                    <span class="">
+                        <img src="pricetag.png" alt="" width="30px" class="cursor-pointer flex float-left">
+                        <span class="ml-4 text-blue-500 text-xl font-semibold">$ 8023,586</span>
+                    </span>
+                    <span>
+                        <span class="mr-3 text-sm p-1 rounded-full bg-green-500 cursor-pointer hover:bg-green-700 hover:text-white">LYK</span>
+                        <span class="text-xl font-semibold ">$ 8023,586 LYK</span>
+                    </span>
+                    <span class="mt-3 block">Claimable Rewards</span>
+                    <hr  class="mt-1 mb-4">
+                    <span>
+                        <img src="pricetag.png" alt="" width="30px" class="cursor-pointer flex float-left">
+                        <span class="ml-4 text-blue-500 text-xl font-semibold">$ 23,580</span>
+                    </span>
+                    <span>
+                        <span  class="mr-3 text-sm p-1 rounded-full bg-green-500 cursor-pointer hover:bg-green-700 hover:text-white">LYK</span>
+                        <span class="text-xl font-semibold ">$ 23,580 LYK</span>
+                    </span>
+                    <div class="mt-6 flex gap-3 items-center grid grid-cols-1">
+                        <span>
+                            <button type="button" class="px-4 py-1 bg-blue-400 rounded-lg hover:bg-blue-600 hover:text-white">Claim</button>
+                            <span class="">GLOBAL AUTO COMPOUND</span>
+                        </span>
+                        <span class="flex">
+                            <div class="flex items-center">
+                                <label for="toggle1" class="relative inline-flex item-center cursor-pointer">
+                                    <input type="checkbox" id="toggle1" class="sr-only peer">
+                                    <div class="w-10 h-5 bg-gray-300 rounded-full peer-checked:bg-green-500 transition-all"></div> 
+                                    <div class="w-4 h-4 rounded-full bg-white border transition-sm absolute left-0.5 top-0.5 peer-checked:translate-x-5 transition-transform"></div>
+                                </label>
+                            </div>
+                            <div class="group">
+                                <img src="info.png" alt="" width="20px" id="info" class="relative ms-3">
+                                <p class="hidden absolute group-hover:block w-56 bg-gray-500 ">Fast security System and much more</p>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="topright" class="px-5 py-4">
+                <span>Token LYK</span>
+                <hr class="mt-1 mb-4">
+                <span>
+                    <span class="text-sm p-1 rounded-full bg-green-500 cursor-pointer hover:bg-green-700 hover:text-white">LYK</span>
+                    <span class="ml-4 text-xl font-semibold">$ 8023,586</span>
+                </span><br>
+                <span  class="mt-3 block">Available LYK to deposite</span>
+                <hr class="mt-1 mb-4">
+                <span>
+                    <span class="text-sm mr-3 p-1 rounded-full bg-green-500 cursor-pointer hover:bg-green-700 hover:text-white">LYK</span>
+                    <span  class="text-xl  text-blue-500 font-semibold ">$ 8023,586</span>
+                </span><br>
+                <button type="button" class="px-4 py-2 bg-blue-400 mt-5 rounded-lg hover:bg-blue-600 hover:text-white mb-4">Purchase Calculator</button>
+                <button type="button" class="px-4 py-2 bg-blue-400 rounded-lg hover:bg-blue-600 hover:text-white">Reward Calculator</button>
+
+            </div>
+        </div>
+        <div class="mx-4 mt-10 mb-3">Machines</div>
+        <div id="middle" class="mx-4 bg-white justify-between">
+            <ul class=" lg:grid lg:grid-cols-5 border-solid border-black border-[1px] px-5 justify-center gap-44 lg:justify-between flex">
+                <li class="ms-5 py-2">Product</li>
+                <li class="hidden sm:block py-2">LifeTime Rewards</li>
+                <li class="sm:mx-20 py-2">Staked</li>
+                <li class="hidden lg:block py-2">Claimable Rewards</li>
+                <li class="hidden lg:block py-2">QuickAction</li>
+            </ul>
+            <ul id="1st" class="border-solid border-black border-[1px] items-center px-5">
+                <div id="firstitem" class="items-center lg:grid lg:grid-cols-5 flex justify-between">
+                    <li class="flex items-center py-3">
+                        <input type="checkbox" class="mr-6">
+                        <img src="machine1.jpg" alt="" width="50px" class="mr-3">
+                        <span class="font-semibold">Homnifi AirStream</span>
+                    </li>
+                    <li class="hidden md:block font-semibold"><span>$ 4562.124</span></li>
+                    <li class="py-3 font-semibold"><span>$ 4562.124 </span></li>
+                    <li class="hidden lg:block py-3 font-semibold"><span>$ 14,000 </span></li>
+                    <li class="py-3 flex justify-between">
+                        <button class="hidden lg:block bg-black text-white lg:px-[5px] lg:py-[4px] xl:px-4 xl:py-2 hover:bg-gray-800 rounded-full cursor-pointer">+ Stake</button>
+                        <button class="hidden lg:block bg-blue-500 text-white lg:px-[5px] lg:py-[4px] xl:px-4 xl:py-2 hover:bg-blue-400 ms-2 rounded-full cursor-pointer">+ Redeem</button>
+                        <img id="dropdown1" src="dropdown.png" alt="" class="w-7 ms-2 cursor-pointer">
+                    </li>
+                </div>
+            </ul>
+                <div id="info1" class="hidden">
+                <ul class="items-center xl:grid xl:grid-cols-5 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 px-4 py-3 gap-4 space-y-4">
+                    <li class="rounded-md drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] bg-white pb-4 mt-2 pb-4 md:pd-0">
+                        <div class="flex justify-between  ms-4">
+                            <h1 class="font-semibold py-2 lg:py-1">Explore</h1>
+                            <div class="pr-2 py-2 lg:py-1">
+                                <button class="py-1 px-3 bg-gray-200 text-[10px] rounded-xl">Status</button>
+                                <button class="py-1 px-2 bg-green-500 text-[10px] rounded-xl">Active</button>
+                            </div>
+                        </div>
+                        <hr class="my-2">
+                        <div class="flex ms-4 w-full">
+                            <ul>
+                                <li class="flex">
+                                    <input type="checkbox" class="float-left">
+                                    <div class="flex flex-col font-semibold ml-3">
+                                        <span class="text-[12px]">LYK Price</span>
+                                        <span class="text-lg">$ 12,456.00</span>
+                                        
+                                    </div>
+                                    <!-- <div class="flex ms-9"> -->
+                                        <img src="loss.png" alt=""  class="ms-9 w-6 h-9">
+                                        <img src="loss.png" alt=""  class="ms-5 w-6 h-9">
+                                    <!-- </div> -->
+                                </li>
+                                <li class="flex mt-3">
+                                    <input type="checkbox" class="float-left">
+                                    <div class="flex flex-col font-semibold ml-3">
+                                        <span class="text-[12px]">DLP Price</span>
+                                        <span class="text-lg">$ 12,456.00</span>
+                                        
+                                    </div>
+                                    <!-- <div class="flex ms-9"> -->
+                                        <img src="profit.png" alt=""  class="ms-9 w-6 h-9">
+                                        <img src="profit.png" alt=""  class="ms-5 w-6 h-9">
+                                </li>
+                                <li class="flex mt-3">
+                                    <input type="checkbox" class="float-left">
+                                    <div class="flex flex-col font-semibold ml-3">
+                                        <span class="text-[12px]">ATH Price</span>
+                                        <span class="text-lg">$ 12,456.00</span>
+                                        
+                                    </div>
+                                    <!-- <div class="flex ms-9"> -->
+                                        <img src="profit.png" alt=""  class="ms-9 w-6 h-9">
+                                        <img src="profit.png" alt=""  class="ms-5 w-6 h-9">
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="my-2">
+                        <div class="mx-4">
+                            <div class="justify-between flex text-[12px]">
+                                <div>Mining Powor</div>
+                                <div>0.2% (Daily)</div>
+                            </div>
+                            <div class="justify-between flex text-[12px] mt-2">
+                                <div>Boots + Total</div>
+                                <div>0.09% = 0.3%</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="rounded-md drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] bg-white w-full h-full pb-4 md:pd-0">
+                        <div class="m-4 mt-8 relative">
+                            <img src="info.png" alt="" width="20px" class="absolute md:right-[-5px] right-[-5px] md:top-[-20px] top-2">
+                            <p id="info2text" class="hidden w-96 text-center absolute top-[-80px] left-0 bg-gray-300 rounded-lg">Can you Use this amazing machine its very high buildin security System</p>
+                            <img src="bugatti_Devo.jpg" alt="" class="w-16 h-16 rounded-full float-left mt-2" >
+                            <div class="text-sm ms-20 pt-3">
+                                <div class="">id: 552226541</div>
+                                <div class="">AmirJavedMalik</div>
+                            </div>
+                        </div>
+                        <div class="mt-10 ml-4 font-bold">
+                            <div class="text-lg">TOTAL REWARD</div>
+                            <div class="flex">
+                                <span class="text-2xl">$ 25,000 LYK</span> 
+                                <img src="profit.png" alt="" width="25" class="ms-9 ml-10">
+                            </div><hr class="my-4">
+                            <div>
+                                <div class="text-md">CLAIMABLE REWARD</div>
+                                <div class="flex">
+                                <span class="text-2xl">$ 14,000 LYK</span> 
+                                <img src="loss.png" alt="" width="25" class="ms-9 ml-10">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="rounded-md drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] bg-white w-full h-full pb-4 md:pd-0">
+                        <div class="flex justify-between px-3 py-5">
+                            <div class="flex">
+                                <img src="micon.png" alt="" id="logo" width="50px
+                                ">
+                                <span class="mt-6 font-bold">mLYK</span>
+                            </div>
+                            <div class="">
+                                <span class="rounded-lg py-1 px-2 text-[12px] bg-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">+ Stake More</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col px-4">
+                            <span class="text-xl font-bold">STAKED</span>
+                            <span class="text-2xl font-bold">$ 25,000 LYK</span>
+                        </div><hr class="mt-6 mb-3">
+                        <div class="flex flex-cols justify-between px-4">
+                            <span>AUTO LINK</span>
+                            <div class="flex items-center">
+                                <label for="toggle" class="relative inline-flex item-center cursor-pointer">
+                                    <input type="checkbox" id="toggle" class="sr-only peer">    <!--hide checked box-->
+                                    <div class="w-10 h-5 bg-gray-300 rounded-full peer-checked:bg-green-500 transition-all"></div>  <!--background -->
+                                    <div class="w-4 h-4 rounded-full bg-white border transition-sm absolute left-0.5 top-0.5 peer-checked:translate-x-5 transition-transform"></div>
+                                </label>
+                            </div>
+                        </div><hr class="my-3">
+                        <div class="text-right px-3">
+                            <p class="text-blue-600 hover:underline cursor-pointer">Turn on and get 30% Off</p>
+                        </div>
+                    </li>
+                    <li class="rounded-md drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] bg-white w-full h-full pb-4 md:pd-0">
+                        <div class="px-5 py-5 flex justify-between">
+                            <span class="text-2xl font-semibold">STAKED</span>
+                            <p class="py-1 px-2 text-[12px] bg-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] rounded-lg">+ New Stake</p>
+                        </div><hr class="my-4">
+                        <div class="mx-5">
+                            <h1 class="text-2xl font-semibold ">Total</h1>
+                            <h1 class="text-4xl font-extrabold ">$ 25,000</h1>
+                            <h1 class="text-4xl font-extrabold ">mLYK</h1>
+                        </div>
+                    </li>
+                    <li class="rounded-md drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] bg-white w-full h-full pb-4 md:pd-0">
+                        <div class="px-5 py-5 flex justify-between">
+                            <span class="text-2xl font-semibold">EXPIRESIN </span>
+                            <p class="py-1 px-2 text-[12px] bg-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] rounded-lg xl:">+ Stake MORE</p>
+                        </div><hr class="my-4">
+                        <div class="mx-5">
+                            <h1 class="text-2xl font-semibold ">Total</h1>
+                            <h1 class="text-4xl font-extrabold ">3 Month</h1>
+                            <h1 class="text-4xl font-extrabold ">25 Days</h1>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            <ul id="2nd" class="lg:grid lg:grid-cols-5 flex justify-between border-solid border-black border-[1px] items-center">
+                <li class="flex ms-6 items-center py-3">
+                    <input type="checkbox" class="mr-6">
+                    <img src="machine2.jpg" alt="" width="50px" class="mr-3">
+                    <span class="font-semibold">Homnifi MiniMax</span>
+                </li>
+                <li class="py-3 font-semibold hidden md:block"><span>$ 4562.124 </span></li>
+                <li class="py-3 font-semibold"><span>$ 4562.124 </span></li>
+                <li class="py-3 font-semibold hidden lg:block"><span>$ 14,000 </span></li>
+                <li class="py-3 flex justify-between">
+                    <button class="hidden lg:block bg-black text-white py-1 px-4 rounded-full">+ Stake</button>
+                    <img id="dropdown2" src="dropdown.png" alt="" width="30px" class="mr-4 cursor-pointer">
+
+                </li>
+            </ul>
+                <div id="info2" class="hidden">
+                    <ul class="items-center xl:grid xl:grid-cols-5 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 px-4 py-3 gap-4 space-y-4">
+                        <li class="rounded-md drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] bg-white pb-4 mt-2 pb-4 md:pd-0">
+                            <div class="flex justify-between  ms-4">
+                                <h1 class="font-semibold py-2 lg:py-1">Explore</h1>
+                                <div class="pr-2 py-2 lg:py-1">
+                                    <button class="py-1 px-3 bg-gray-200 text-[10px] rounded-xl">Status</button>
+                                    <button class="py-1 px-2 bg-green-500 text-[10px] rounded-xl">Active</button>
+                                </div>
+                            </div>
+                            <hr class="my-2">
+                            <div class="flex ms-4 w-full">
+                                <ul>
+                                    <li class="flex">
+                                        <input type="checkbox" class="float-left">
+                                        <div class="flex flex-col font-semibold ml-3">
+                                            <span class="text-[12px]">LYK Price</span>
+                                            <span class="text-lg">$ 12,456.00</span>
+                                            
+                                        </div>
+                                        <!-- <div class="flex ms-9"> -->
+                                            <img src="loss.png" alt=""  class="ms-9 w-6 h-9">
+                                            <img src="loss.png" alt=""  class="ms-5 w-6 h-9">
+                                        <!-- </div> -->
+                                    </li>
+                                    <li class="flex mt-3">
+                                        <input type="checkbox" class="float-left">
+                                        <div class="flex flex-col font-semibold ml-3">
+                                            <span class="text-[12px]">DLP Price</span>
+                                            <span class="text-lg">$ 12,456.00</span>
+                                            
+                                        </div>
+                                        <!-- <div class="flex ms-9"> -->
+                                            <img src="profit.png" alt=""  class="ms-9 w-6 h-9">
+                                            <img src="profit.png" alt=""  class="ms-5 w-6 h-9">
+                                    </li>
+                                    <li class="flex mt-3">
+                                        <input type="checkbox" class="float-left">
+                                        <div class="flex flex-col font-semibold ml-3">
+                                            <span class="text-[12px]">ATH Price</span>
+                                            <span class="text-lg">$ 12,456.00</span>
+                                            
+                                        </div>
+                                        <!-- <div class="flex ms-9"> -->
+                                            <img src="profit.png" alt=""  class="ms-9 w-6 h-9">
+                                            <img src="profit.png" alt=""  class="ms-5 w-6 h-9">
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr class="my-2">
+                            <div class="mx-4">
+                                <div class="justify-between flex text-[12px]">
+                                    <div>Mining Powor</div>
+                                    <div>0.2% (Daily)</div>
+                                </div>
+                                <div class="justify-between flex text-[12px] mt-2">
+                                    <div>Boots + Total</div>
+                                    <div>0.09% = 0.3%</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="rounded-md drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] bg-white w-full h-full pb-4 md:pd-0">
+                            <div class="m-4 mt-8 relative">
+                                <img src="info.png" alt="" width="20px" class="absolute md:right-[-5px] right-[-5px] md:top-[-20px] top-2">
+                                <p id="info2text" class="hidden w-96 text-center absolute top-[-80px] left-0 bg-gray-300 rounded-lg">Can you Use this amazing machine its very high buildin security System</p>
+                                <img src="bugatti_Devo.jpg" alt="" class="w-16 h-16 rounded-full float-left mt-2" >
+                                <div class="text-sm ms-20 pt-3">
+                                    <div class="">id: 552226541</div>
+                                    <div class="">AmirJavedMalik</div>
+                                </div>
+                            </div>
+                            <div class="mt-10 ml-4 font-bold">
+                                <div class="text-lg">TOTAL REWARD</div>
+                                <div class="flex">
+                                    <span class="text-2xl">$ 25,000 LYK</span> 
+                                    <img src="profit.png" alt="" width="25" class="ms-9 ml-10">
+                                </div><hr class="my-4">
+                                <div>
+                                    <div class="text-md">CLAIMABLE REWARD</div>
+                                    <div class="flex">
+                                    <span class="text-2xl">$ 14,000 LYK</span> 
+                                    <img src="loss.png" alt="" width="25" class="ms-9 ml-10">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="rounded-md drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] bg-white w-full h-full pb-4 md:pd-0">
+                            <div class="flex justify-between px-3 py-5">
+                                <div class="flex">
+                                    <img src="micon.png" alt="" id="logo" width="50px
+                                    ">
+                                    <span class="mt-6 font-bold">mLYK</span>
+                                </div>
+                                <div class="">
+                                    <span class="rounded-lg py-1 px-2 text-[12px] bg-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">+ Stake More</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col px-4">
+                                <span class="text-xl font-bold">STAKED</span>
+                                <span class="text-2xl font-bold">$ 25,000 LYK</span>
+                            </div><hr class="mt-6 mb-3">
+                            <div class="flex flex-cols justify-between px-4">
+                                <span>AUTO LINK</span>
+                                <div class="flex items-center">
+                                    <label for="toggle12" class="relative inline-flex item-center cursor-pointer">
+                                        <input type="checkbox" id="toggle12" class="sr-only peer">    <!--hide checked box-->
+                                        <div class="w-10 h-5 bg-gray-300 rounded-full peer-checked:bg-green-500 transition-all"></div>  <!--background -->
+                                        <div class="w-4 h-4 rounded-full bg-white border transition-sm absolute left-0.5 top-0.5 peer-checked:translate-x-5 transition-transform"></div>
+                                    </label>
+                                </div>
+                            </div><hr class="my-3">
+                            <div class="text-right px-3">
+                                <p class="text-blue-600 hover:underline cursor-pointer">Turn on and get 30% Off</p>
+                            </div>
+                        </li>
+                        <li class="rounded-md drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] bg-white w-full h-full pb-4 md:pd-0">
+                            <div class="px-5 py-5 flex justify-between">
+                                <span class="text-2xl font-semibold">STAKED</span>
+                                <p class="py-1 px-2 text-[12px] bg-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] rounded-lg">+ New Stake</p>
+                            </div><hr class="my-4">
+                            <div class="mx-5">
+                                <h1 class="text-2xl font-semibold ">Total</h1>
+                                <h1 class="text-4xl font-extrabold ">$ 25,000</h1>
+                                <h1 class="text-4xl font-extrabold ">mLYK</h1>
+                            </div>
+                        </li>
+                        <li class="rounded-md drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] bg-white w-full h-full pb-4 md:pd-0">
+                            <div class="px-5 py-5 flex justify-between">
+                                <span class="text-2xl font-semibold">EXPIRESIN </span>
+                                <p class="py-1 px-2 text-[12px] bg-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] rounded-lg xl:">+ Stake MORE</p>
+                            </div><hr class="my-4">
+                            <div class="mx-5">
+                                <h1 class="text-2xl font-semibold ">Total</h1>
+                                <h1 class="text-4xl font-extrabold ">3 Month</h1>
+                                <h1 class="text-4xl font-extrabold ">25 Days</h1>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+           <ul id="3rd" class="lg:grid lg:grid-cols-5 flex justify-between border-solid border-black border-[1px] items-center">
+                <li class="flex ms-6 items-center py-3">
+                    <input type="checkbox" class="mr-6">
+                    <img src="machine3.jpg" alt="" width="50px" class="mr-3">
+                    <span class="font-semibold">Homnifi AirStream</span>
+                </li>
+                <li class="py-3 font-semibold  hidden md:block"><span>$ 4562.124 </span></li>
+                <li class="py-3 font-semibold"><span>$ 4562.124 </span></li>
+                <li class="py-3 font-semibold hidden lg:block"><span>$ 14,000 </span></li>
+                <li class="py-3 flex justify-between">
+                    <button class="hidden lg:block  bg-black text-white py-1 px-4 rounded-full">+ Stake</button>
+                    <img id="dropdown3" src="dropdown.png" alt="" width="30px" class="mr-4 cursor-pointer">
+
+                </li>
+            </ul>
+                <div id="info3" class="hidden">
+                    <ul class="items-center xl:grid xl:grid-cols-5 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 px-4 py-3 gap-4 space-y-4">
+                        <li class="rounded-md drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] bg-white pb-4 mt-2 pb-4 md:pd-0">
+                            <div class="flex justify-between  ms-4">
+                                <h1 class="font-semibold py-2 lg:py-1">Explore</h1>
+                                <div class="pr-2 py-2 lg:py-1">
+                                    <button class="py-1 px-3 bg-gray-200 text-[10px] rounded-xl">Status</button>
+                                    <button class="py-1 px-2 bg-green-500 text-[10px] rounded-xl">Active</button>
+                                </div>
+                            </div>
+                            <hr class="my-2">
+                            <div class="flex ms-4 w-full">
+                                <ul>
+                                    <li class="flex">
+                                        <input type="checkbox" class="float-left">
+                                        <div class="flex flex-col font-semibold ml-3">
+                                            <span class="text-[12px]">LYK Price</span>
+                                            <span class="text-lg">$ 12,456.00</span>
+                                            
+                                        </div>
+                                        <!-- <div class="flex ms-9"> -->
+                                            <img src="loss.png" alt=""  class="ms-9 w-6 h-9">
+                                            <img src="loss.png" alt=""  class="ms-5 w-6 h-9">
+                                        <!-- </div> -->
+                                    </li>
+                                    <li class="flex mt-3">
+                                        <input type="checkbox" class="float-left">
+                                        <div class="flex flex-col font-semibold ml-3">
+                                            <span class="text-[12px]">DLP Price</span>
+                                            <span class="text-lg">$ 12,456.00</span>
+                                            
+                                        </div>
+                                        <!-- <div class="flex ms-9"> -->
+                                            <img src="profit.png" alt=""  class="ms-9 w-6 h-9">
+                                            <img src="profit.png" alt=""  class="ms-5 w-6 h-9">
+                                    </li>
+                                    <li class="flex mt-3">
+                                        <input type="checkbox" class="float-left">
+                                        <div class="flex flex-col font-semibold ml-3">
+                                            <span class="text-[12px]">ATH Price</span>
+                                            <span class="text-lg">$ 12,456.00</span>
+                                            
+                                        </div>
+                                        <!-- <div class="flex ms-9"> -->
+                                            <img src="profit.png" alt=""  class="ms-9 w-6 h-9">
+                                            <img src="profit.png" alt=""  class="ms-5 w-6 h-9">
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr class="my-2">
+                            <div class="mx-4">
+                                <div class="justify-between flex text-[12px]">
+                                    <div>Mining Powor</div>
+                                    <div>0.2% (Daily)</div>
+                                </div>
+                                <div class="justify-between flex text-[12px] mt-2">
+                                    <div>Boots + Total</div>
+                                    <div>0.09% = 0.3%</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="rounded-md drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] bg-white w-full h-full pb-4 md:pd-0">
+                            <div class="m-4 mt-8 relative">
+                                <img src="info.png" alt="" width="20px" class="absolute md:right-[-5px] right-[-5px] md:top-[-20px] top-2">
+                                <p id="info2text" class="hidden w-96 text-center absolute top-[-80px] left-0 bg-gray-300 rounded-lg">Can you Use this amazing machine its very high buildin security System</p>
+                                <img src="bugatti_Devo.jpg" alt="" class="w-16 h-16 rounded-full float-left mt-2" >
+                                <div class="text-sm ms-20 pt-3">
+                                    <div class="">id: 552226541</div>
+                                    <div class="">AmirJavedMalik</div>
+                                </div>
+                            </div>
+                            <div class="mt-10 ml-4 font-bold">
+                                <div class="text-lg">TOTAL REWARD</div>
+                                <div class="flex">
+                                    <span class="text-2xl">$ 25,000 LYK</span> 
+                                    <img src="profit.png" alt="" width="25" class="ms-9 ml-10">
+                                </div><hr class="my-4">
+                                <div>
+                                    <div class="text-md">CLAIMABLE REWARD</div>
+                                    <div class="flex">
+                                    <span class="text-2xl">$ 14,000 LYK</span> 
+                                    <img src="loss.png" alt="" width="25" class="ms-9 ml-10">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="rounded-md drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] bg-white w-full h-full pb-4 md:pd-0">
+                            <div class="flex justify-between px-3 py-5">
+                                <div class="flex">
+                                    <img src="micon.png" alt="" id="logo" width="50px
+                                    ">
+                                    <span class="mt-6 font-bold">mLYK</span>
+                                </div>
+                                <div class="">
+                                    <span class="rounded-lg py-1 px-2 text-[12px] bg-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">+ Stake More</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col px-4">
+                                <span class="text-xl font-bold">STAKED</span>
+                                <span class="text-2xl font-bold">$ 25,000 LYK</span>
+                            </div><hr class="mt-6 mb-3">
+                            <div class="flex flex-cols justify-between px-4">
+                                <span>AUTO LINK</span>
+                                <div class="flex items-center">
+                                    <label for="toggle13" class="relative inline-flex item-center cursor-pointer">
+                                        <input type="checkbox" id="toggle13" class="sr-only peer">    <!--hide checked box-->
+                                        <div class="w-10 h-5 bg-gray-300 rounded-full peer-checked:bg-green-500 transition-all"></div>  <!--background -->
+                                        <div class="w-4 h-4 rounded-full bg-white border transition-sm absolute left-0.5 top-0.5 peer-checked:translate-x-5 transition-transform"></div>
+                                    </label>
+                                </div>
+                            </div><hr class="my-3">
+                            <div class="text-right px-3">
+                                <p class="text-blue-600 hover:underline cursor-pointer">Turn on and get 30% Off</p>
+                            </div>
+                        </li>
+                        <li class="rounded-md drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] bg-white w-full h-full pb-4 md:pd-0">
+                            <div class="px-5 py-5 flex justify-between">
+                                <span class="text-2xl font-semibold">STAKED</span>
+                                <p class="py-1 px-2 text-[12px] bg-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] rounded-lg">+ New Stake</p>
+                            </div><hr class="my-4">
+                            <div class="mx-5">
+                                <h1 class="text-2xl font-semibold ">Total</h1>
+                                <h1 class="text-4xl font-extrabold ">$ 25,000</h1>
+                                <h1 class="text-4xl font-extrabold ">mLYK</h1>
+                            </div>
+                        </li>
+                        <li class="rounded-md drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] bg-white w-full h-full pb-4 md:pd-0">
+                            <div class="px-5 py-5 flex justify-between">
+                                <span class="text-2xl font-semibold">EXPIRESIN </span>
+                                <p class="py-1 px-2 text-[12px] bg-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] rounded-lg xl:">+ Stake MORE</p>
+                            </div><hr class="my-4">
+                            <div class="mx-5">
+                                <h1 class="text-2xl font-semibold ">Total</h1>
+                                <h1 class="text-4xl font-extrabold ">3 Month</h1>
+                                <h1 class="text-4xl font-extrabold ">25 Days</h1>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            <ul id="4rth" class="lg:grid lg:grid-cols-5 flex justify-between border-solid border-black border-[1px] items-center">
+                <li class="flex ms-6 items-center py-3">
+                    <input type="checkbox" class="mr-6">
+                    <img src="machine4.jpg" alt="" width="50px" class="mr-3">
+                    <span class="font-semibold">Homnifi AirStream</span>
+                </li>
+                <li class="py-3 font-semibold hidden md:block"><span>$ 4562.124 </span></li>
+                <li class="py-3 font-semibold"><span>$ 4562.124 </span></li>
+                <li class="py-3 font-semibold hidden lg:block"><span>$ 14,000 </span></li>
+                <li class="py-3 flex justify-between">
+                    <button class="hidden lg:block bg-black text-white py-1 px-4 rounded-full">+ Stake</button>
+                    <img id="dropdown4" src="dropdown.png" alt="" width="30px" class="mr-4 cursor-pointer">
+
+                </li>
+            </ul>
+            <div id="info4" class="hidden">
+                    <ul class="items-center xl:grid xl:grid-cols-5 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 px-4 py-3 gap-4 space-y-4">
+                        <li class="rounded-md drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] bg-white pb-4 mt-2 pb-4 md:pd-0">
+                            <div class="flex justify-between  ms-4">
+                                <h1 class="font-semibold py-2 lg:py-1">Explore</h1>
+                                <div class="pr-2 py-2 lg:py-1">
+                                    <button class="py-1 px-3 bg-gray-200 text-[10px] rounded-xl">Status</button>
+                                    <button class="py-1 px-2 bg-green-500 text-[10px] rounded-xl">Active</button>
+                                </div>
+                            </div>
+                            <hr class="my-2">
+                            <div class="flex ms-4 w-full">
+                                <ul>
+                                    <li class="flex">
+                                        <input type="checkbox" class="float-left">
+                                        <div class="flex flex-col font-semibold ml-3">
+                                            <span class="text-[12px]">LYK Price</span>
+                                            <span class="text-lg">$ 12,456.00</span>
+                                            
+                                        </div>
+                                        <!-- <div class="flex ms-9"> -->
+                                            <img src="loss.png" alt=""  class="ms-9 w-6 h-9">
+                                            <img src="loss.png" alt=""  class="ms-5 w-6 h-9">
+                                        <!-- </div> -->
+                                    </li>
+                                    <li class="flex mt-3">
+                                        <input type="checkbox" class="float-left">
+                                        <div class="flex flex-col font-semibold ml-3">
+                                            <span class="text-[12px]">DLP Price</span>
+                                            <span class="text-lg">$ 12,456.00</span>
+                                            
+                                        </div>
+                                        <!-- <div class="flex ms-9"> -->
+                                            <img src="profit.png" alt=""  class="ms-9 w-6 h-9">
+                                            <img src="profit.png" alt=""  class="ms-5 w-6 h-9">
+                                    </li>
+                                    <li class="flex mt-3">
+                                        <input type="checkbox" class="float-left">
+                                        <div class="flex flex-col font-semibold ml-3">
+                                            <span class="text-[12px]">ATH Price</span>
+                                            <span class="text-lg">$ 12,456.00</span>
+                                            
+                                        </div>
+                                        <!-- <div class="flex ms-9"> -->
+                                            <img src="profit.png" alt=""  class="ms-9 w-6 h-9">
+                                            <img src="profit.png" alt=""  class="ms-5 w-6 h-9">
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr class="my-2">
+                            <div class="mx-4">
+                                <div class="justify-between flex text-[12px]">
+                                    <div>Mining Powor</div>
+                                    <div>0.2% (Daily)</div>
+                                </div>
+                                <div class="justify-between flex text-[12px] mt-2">
+                                    <div>Boots + Total</div>
+                                    <div>0.09% = 0.3%</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="rounded-md drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] bg-white w-full h-full pb-4 md:pd-0">
+                            <div class="m-4 mt-8 relative">
+                                <img src="info.png" alt="" width="20px" class="absolute md:right-[-5px] right-[-5px] md:top-[-20px] top-2">
+                                <p id="info2text" class="hidden w-96 text-center absolute top-[-80px] left-0 bg-gray-300 rounded-lg">Can you Use this amazing machine its very high buildin security System</p>
+                                <img src="bugatti_Devo.jpg" alt="" class="w-16 h-16 rounded-full float-left mt-2" >
+                                <div class="text-sm ms-20 pt-3">
+                                    <div class="">id: 552226541</div>
+                                    <div class="">AmirJavedMalik</div>
+                                </div>
+                            </div>
+                            <div class="mt-10 ml-4 font-bold">
+                                <div class="text-lg">TOTAL REWARD</div>
+                                <div class="flex">
+                                    <span class="text-2xl">$ 25,000 LYK</span> 
+                                    <img src="profit.png" alt="" width="25" class="ms-9 ml-10">
+                                </div><hr class="my-4">
+                                <div>
+                                    <div class="text-md">CLAIMABLE REWARD</div>
+                                    <div class="flex">
+                                    <span class="text-2xl">$ 14,000 LYK</span> 
+                                    <img src="loss.png" alt="" width="25" class="ms-9 ml-10">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="rounded-md drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] bg-white w-full h-full pb-4 md:pd-0">
+                            <div class="flex justify-between px-3 py-5">
+                                <div class="flex">
+                                    <img src="micon.png" alt="" id="logo" width="50px
+                                    ">
+                                    <span class="mt-6 font-bold">mLYK</span>
+                                </div>
+                                <div class="">
+                                    <span class="rounded-lg py-1 px-2 text-[12px] bg-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">+ Stake More</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col px-4">
+                                <span class="text-xl font-bold">STAKED</span>
+                                <span class="text-2xl font-bold">$ 25,000 LYK</span>
+                            </div><hr class="mt-6 mb-3">
+                            <div class="flex flex-cols justify-between px-4">
+                                <span>AUTO LINK</span>
+                                <div class="flex items-center">
+                                    <label for="toggle14" class="relative inline-flex item-center cursor-pointer">
+                                        <input type="checkbox" id="toggle14" class="sr-only peer">    <!--hide checked box-->
+                                        <div class="w-10 h-5 bg-gray-300 rounded-full peer-checked:bg-green-500 transition-all"></div>  <!--background -->
+                                        <div class="w-4 h-4 rounded-full bg-white border transition-sm absolute left-0.5 top-0.5 peer-checked:translate-x-5 transition-transform"></div>
+                                    </label>
+                                </div>
+                            </div><hr class="my-3">
+                            <div class="text-right px-3">
+                                <p class="text-blue-600 hover:underline cursor-pointer">Turn on and get 30% Off</p>
+                            </div>
+                        </li>
+                        <li class="rounded-md drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] bg-white w-full h-full pb-4 md:pd-0">
+                            <div class="px-5 py-5 flex justify-between">
+                                <span class="text-2xl font-semibold">STAKED</span>
+                                <p class="py-1 px-2 text-[12px] bg-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] rounded-lg">+ New Stake</p>
+                            </div><hr class="my-4">
+                            <div class="mx-5">
+                                <h1 class="text-2xl font-semibold ">Total</h1>
+                                <h1 class="text-4xl font-extrabold ">$ 25,000</h1>
+                                <h1 class="text-4xl font-extrabold ">mLYK</h1>
+                            </div>
+                        </li>
+                        <li class="rounded-md drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] bg-white w-full h-full pb-4 md:pd-0">
+                            <div class="px-5 py-5 flex justify-between">
+                                <span class="text-2xl font-semibold">EXPIRESIN </span>
+                                <p class="py-1 px-2 text-[12px] bg-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] rounded-lg xl:">+ Stake MORE</p>
+                            </div><hr class="my-4">
+                            <div class="mx-5">
+                                <h1 class="text-2xl font-semibold ">Total</h1>
+                                <h1 class="text-4xl font-extrabold ">3 Month</h1>
+                                <h1 class="text-4xl font-extrabold ">25 Days</h1>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            
+        </div>
+        <div id="bottom " class="my-16 mx-4">
+            <div id="bottomhead" >    
+                <span class="mb-6 flex text-lg font-semibold">Transaction History</span>
+                <div class="justify-between flex flex-col lg:flex-row">
+                    <div id="leftbottom" class="">
+                        <div id="searchbar" class="sm:grid sm:grid-cols-2 sm:justify-between md:flex space-y-4 font-semibold items-center justify-center">
+                            <div class="flex rounded-lg items-center bg-white sm:mx-9 h-6 pl-2 py-4">    
+                                <img src="searchicon.png" alt="" id="iconsearch" width="25px" class="cursor-pointer mx-[2px]">
+                                <input id="search" type="text" placeholder="Search" class="ml-2 rounded-lg px-2 w-full focus:outline-none focus:border-none">
+                            </div>
+                            <div id="coin" class="flex justify-center rounded-lg px-2 min-[480px]:float-left ">
+                                    <label for="optcion" class="flex bg-white p-[2px] pl-2  rounded-lg">
+                                        Coin
+                                        <select name="optcion" id="optcion" class="ml-11 rounded-lg px-1 py-[2px] justify-center w-16">
+                                            <option value="option1">All</option>
+                                            <option value="option1">$ 5k LYK - $ 10k LYK</option>
+                                            <option value="option2">$ 10k LYK - $ 15k LYK</option>
+                                            <option value="option3">$ 15k LYK - $ 20k LYK</option>
+                                            <option value="option4">$ 20k LYK - $ 25k LYK</option>
+                                        </select>
+                                    </label>
+                            </div>
+                            <div id="status" class="flex justify-center rounded-lg px-2">
+                                    <label for="optstatus" class="bg-white p-[2px] pl-2  rounded-lg">
+                                        Status
+                                        <select name="optstatus" id="optstatus" class="ml-11 rounded-lg px-1 py-[2px] justify-center">
+                                            <option value="option1">All</option>
+                                            <option value="option1">Active</option>
+                                            <option value="option2">Inactive</option>
+                                        </select>
+                                    </label>
+                            </div>            
+                            <div id="reset" class="p-2 cursor-pointer text-red-600 hover:bg-gray-200 rounded-lg text-center">Reset</div> 
+
+                        </div>
+                    </div>
+                    <div id="rightbottom" class="mx-9 flex justify-center sm:mt-5 md:justify-normal lg:float-right">
+                        <button type="button" class="flex px-5 py-2 bg-blue-500 rounded-lg gap-3 text-xl font-extrabold hover:text-white">
+                            <img src="clouddown.png" alt="" class="w-7 hover:w-8 hover:invert">
+                            <span>Download</span>
+
+                            </button>
+                    </div>
+                </div>
+            </div>
+            <div id="bottominfo" class=" mt-10 ml-14 w-[95%] bg-white px-5 py-5 rounded-lg">
+                <ul class="flex mb-10 gap-[50%] sm:gap-[25%] md:gap-[17%] lg:gap-[16%]">
+                    <li>Machines</li>
+                    <li class="hidden lg:block">Reward</li>
+                    <li class="hidden md:flex">penality <img src="info.png" alt="" class="ms-3 w-5 h-5"></li>
+                    <li>Receivable</li>
+                    <li class="hidden sm:block">Date</li>
+                </ul>
+                <ul class="flex gap-[10%] mb-5 font-semibold">
+                    <li class="flex ">
+                        <img src="machine1.jpg" alt="" class="w-14">
+                        <span>Homnifi Dynamo</span>
+                        <span class="text-red-600 ml-3">Inactive</span>
+                    </li>
+                    <li class="hidden lg:block">
+                        12000 LYK
+                    </li>
+                    <li class="hidden md:flex">
+                        1,000 LYK
+                    </li>
+                    <li>
+                        11,000 LYK
+                    </li>
+                    <li class="hidden sm:block">
+                        02 JULY 2024
+                    </li>
+                </ul>
+                <ul class="flex gap-[10%] mb-5 font-semibold">
+                    <li class="flex ">
+                        <img src="machine2.jpg" alt="" class="w-14">
+                        <span>Homnifi Dynamo</span>
+                        <span class="text-green-600 ml-3">active</span>
+                    </li>
+                    <li class="md:hidden lg:block">
+                        12000 LYK
+                    </li>
+                    <li class="hidden md:flex">
+                        1,000 LYK
+                    </li>
+                    <li>
+                        11,000 LYK
+                    </li>
+                    <li class="hidden sm:block">
+                        02 JULY 2024
+                    </li>
+                </ul>
+                <ul class="flex gap-[10%] mb-5 font-semibold">
+                    <li class="flex ">
+                        <img src="machine3.jpg" alt="" class="w-14">
+                        <span>Homnifi Dynamo</span>
+                        <span class="text-red-600 ml-3">Inactive</span>
+                    </li>
+                    <li class="md:hidden lg:block">
+                        12000 LYK
+                    </li>
+                    <li class="hidden md:flex">
+                        1,000 LYK
+                    </li>
+                    <li>
+                        11,000 LYK
+                    </li>
+                    <li class="hidden sm:block">
+                        02 JULY 2024
+                    </li>
+                </ul>
+                <ul class="flex gap-[10%] mb-5 font-semibold">
+                    <li class="flex ">
+                        <img src="machine4.jpg" alt="" class="w-14">
+                        <span>Homnifi Dynamo</span>
+                        <span class="text-green-600 ml-3">active</span>
+                    </li>
+                    <li class="md:hidden lg:block">
+                        12000 LYK
+                    </li>
+                    <li class="hidden md:block">
+                        1,000 LYK
+                    </li>
+                    <li>
+                        11,000 LYK
+                    </li>
+                    <li class="hidden sm:block">
+                        02 JULY 2024
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let infobtn = document.getElementById("info2");
+        let info2text = document.getElementById("info2text");
+
+        infobtn.addEventListener("mouseover", ()=>{
+            info2text.style.display = 'block';
+        })
+        infobtn.addEventListener("mouseout", ()=>{
+            info2text.style.display = 'none';
+        })
+
+
+        let dropdown1 = document.getElementById("1st");
+        let info1 = document.getElementById("info1");
+        let dropicon1 = document.getElementById("dropdown1");
+        
+        dropdown1.addEventListener("click", () => {
+            info1.style.display = info1.style.display === 'block' ? 'none' : 'block';
+            dropicon1.style.transform = dropicon1.style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
+        });
+
+        let dropdown2 = document.getElementById("2nd");
+        let dropicon2 = document.getElementById("dropdown2");
+        let info2 = document.getElementById("info2");
+        
+        dropdown2.addEventListener("click", () => {
+            info2.style.display = info2.style.display === 'block' ? 'none' : 'block';
+            dropicon2.style.transform = dropicon2.style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
+            
+        });
+
+        let dropdown3 = document.getElementById("3rd");
+        let dropicon3 = document.getElementById("dropdown3");
+        let info3 = document.getElementById("info3");
+        
+        dropdown3.addEventListener("click", () => {
+            info3.style.display = info3.style.display === 'block' ? 'none' : 'block';
+            dropicon3.style.transform = dropicon3.style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
+            
+        });
+
+        let dropdown4 = document.getElementById("4rth");
+        let dropicon4 = document.getElementById("dropdown4");
+        let info4 = document.getElementById("info4");
+        
+        dropdown4.addEventListener("click", () => {
+            info4.style.display = info4.style.display === 'block' ? 'none' : 'block';
+            dropicon4.style.transform = dropicon4.style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
+            
+        });
+
+
+        const resetopt = document.getElementById("reset");
+        const coin = document.getElementById("optcion");
+        const status = document.getElementById("optstatus");
+        const search = document.getElementById("search");
+        resetopt.addEventListener("click", ()=>{
+            coin.selectedIndex = 0;
+            status.selectedIndex = 0;
+            search.value = '';
+            
+        })
+    </script>
+</body>
+</html>
